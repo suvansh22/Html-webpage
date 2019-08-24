@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	/* width */
+	::-webkit-scrollbar {
+  	width: 8px;
+	}
+	/* Track */
+	::-webkit-scrollbar-track {
+  	background: grey; 
+  	border-radius: 15px;
+	}
+ 	/* Handle */
+	::-webkit-scrollbar-thumb {
+  	background: black;
+  	border-radius: 15px; 
+	}
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+  	background: black;
+  	border-radius: 15px; 
+	}
+	</style>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<title>TEST PAGE</title>
+</head>
+<body background="C:\Users\HP\Desktop\sublime text\HTML\image\mag.png">
+	<div class="row">
+		<div class="title">
+		<h1>COMICS WORLD</h1>
+		</div>
+		<div class="date">
+			<p style="text-align: right; margin-top: 0px; padding: 0px; margin-bottom: 0px">Time: <span id="datetime"></span></p>
+			<script>
+				var dt = new Date();
+				document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+			</script>
+			<p style="text-align: right; margin-top: 0px; padding: 0px">
+				Date: <script> document.write(new Date().toLocaleDateString()); </script>
+			</p>
+		</div>
+		<div style="width: 100%">
+			<hr style="margin-top: 0px; border-color: black;">
+		</div>
+	</div>
+	<div class="row">
+		<div class="tag">
+			<marquee><b><a href="https://www.dccomics.com"> WELCOME TO DC CORNER</a></marquee>
+		</div>
+		<div class="dc"><img src="C:\Users\HP\Desktop\sublime text\HTML\image\dc.png" title="DC IMAGE">
+		</div>
+		<div class="desc"><p class="ddc"><b>DC Comics, Inc. is an American comic book publisher. It is the publishing unit of DC Entertainment,a subsidiary of Warner Bros. since 1967. DC Comics is one of the largest and oldest American comic book companies, and produces material featuring numerous culturally iconic heroic characters including: Superman, Batman, Wonder Woman, The Flash, Green Lantern, Martian Manhunter, Nightwing, Green Arrow, and Aquaman.</p></div>
+	</div>
+	<div class="row">
+		<div class="mtag">
+			<marquee><b><a href="http://www.marvel.com">WELCOME TO MARVEL CORNER</a> </marquee>
+		</div>
+		<div class="desc"><p class="dmar">Marvel Comics is the brand name and primary imprint of Marvel Worldwide Inc., formerly Marvel Publishing, Inc. and Marvel Comics Group, a publisher of American comic books and related media. Marvel started in 1939 as Timely Publications. The Marvel branding began in 1961, the year that the company launched The Fantastic Four and other superhero titles created by Steve Ditko, Stan Lee, Jack Kirby and many others.</div>
+		<div class="mar"><img class="marimg" src="C:\Users\HP\Desktop\sublime text\HTML\image\marvel.png" title="MARVEL IMAGE">
+		</div>
+	</div>
+</html>
